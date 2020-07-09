@@ -12,7 +12,7 @@ for symbol in symbols:
         "symbol": symbol,
         "interval" : "60min",       
         "datatype": "json", 
-        "apikey": "39BAHPL391ODW3GE" } 
+        "apikey": "xx" } 
         response = requests.get(API_URL, data) 
         data = response.json()
         print(symbol)
