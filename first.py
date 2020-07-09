@@ -16,7 +16,7 @@ for symbol in symbols:
         response = requests.get(API_URL, data) 
         data = response.json()
         print(symbol)
-        a = (data['Time Series (60min)'])
+        a = (data['Time Series (120min)'])
         keys = (a.keys())
         for key in keys:
                 print(a[key]['2. high'] + " " + a[key]['5. volume'])
