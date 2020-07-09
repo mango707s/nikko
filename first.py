@@ -2,7 +2,7 @@ import alpha_vantage
 from alpha_vantage import *
 import json
 import requests
-import csv
+import csv, xls
 
 API_URL = "https://www.alphavantage.co/query" 
 symbols = ['QCOM',"INTC","PDD","AAPL"]
@@ -19,7 +19,7 @@ for symbol in symbols:
         a = (data['Time Series (120min)'])
         keys = (a.keys())
         for key in keys:
-                print(a[key]['2. high'] + " " + a[key]['5. volume'])
+                print(a[key]['10. high'] + " " + a[key]['5. volume'])
 
 SomeCommand > SomeFile.txt  
 
